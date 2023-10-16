@@ -42,8 +42,8 @@ function color(){
 }
 
 function canvi() {
-    let preu = parseInt(prompt("Escriu el preu"));
-    let diners = parseInt(prompt("Escriu els diners"));
+    let preu = parseFloat(prompt("Escriu el preu")) * 100;
+    let diners = parseFloat(prompt("Escriu els diners")) * 100;
 
     let canvi = diners - preu;
     let canviTotal = 0;
@@ -59,8 +59,8 @@ function canvi() {
             canvi -= cantidad * valor;
             canviTotal += cantidad * valor;
         }
-    }
-    console.log(`preu = ${preu}   calers = ${diners}`)
+    }   
+    console.log(`preu = ${(preu / 100).toFixed(2)}€   calers = ${(diners / 100).toFixed(2)}€`);
     for (let valor in cantidadDevuelta) {
         console.log(`${cantidadDevuelta[valor]} de ${valor} €`);
     }
