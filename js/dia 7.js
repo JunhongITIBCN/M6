@@ -55,7 +55,6 @@ function piramide() {
             var vacio = document.createElement('td');
             vacio.style.width = "20px";
             vacio.style.height = "20px";
-            vacio.style.backgroundColor = "green"; 
             fila.appendChild(vacio);
         }
 
