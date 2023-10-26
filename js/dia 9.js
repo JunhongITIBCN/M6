@@ -88,3 +88,7 @@ function Variedad() {
     }
     
 }
+
+function horas(){
+    
+}
